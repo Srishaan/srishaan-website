@@ -237,6 +237,29 @@ footer p {
     transform: rotateY(360deg);
 }
 
+.social-links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.social-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
