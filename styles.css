@@ -8,6 +8,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -17,31 +18,33 @@ body {
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(45deg, #333, #555);
     color: #fff;
-    padding: 40px 0;
+    padding: 60px 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 0;
+    font-weight: 700;
 }
 
 header p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
 header p a {
-    color: #1E90FF !important; /* Light blue color with !important to override other styles */
+    color: #1E90FF; /* Light blue color */
     text-decoration: none;
 }
 
 header p a:hover {
-    color: #63B8FF !important; /* Even lighter blue on hover with !important */
+    color: #63B8FF; /* Even lighter blue on hover */
 }
-
 
 nav ul {
     list-style: none;
@@ -52,17 +55,19 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #1E90FF;
 }
 
 main {
@@ -72,27 +77,33 @@ main {
 
 section.light {
     background-color: #fff;
-    padding: 40px 0;
+    padding: 60px 0;
     margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section.dark {
     background-color: #333;
     color: #fff;
-    padding: 40px 0;
+    padding: 60px 0;
     margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 section p, section ul {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
 
 .job, .project {
@@ -104,11 +115,13 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    margin-top: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer p {
     margin: 0;
+    font-size: 1rem;
 }
 
 .education-section {
@@ -181,7 +194,7 @@ footer p {
     perspective: 1000px;
     position: relative;
     width: 100%;
-    height: 250px;
+    height: 300px;
 }
 
 .experience-front, .experience-back {
@@ -190,7 +203,7 @@ footer p {
     height: 100%;
     backface-visibility: hidden;
     border-radius: 10px;
-    transition: transform 0.6s;
+    transition: transform 0.6s ease-in-out;
 }
 
 .experience-front {
@@ -210,7 +223,7 @@ footer p {
 }
 
 .experience-front h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
 }
 
@@ -231,7 +244,7 @@ footer p {
 }
 
 .experience-back p, .experience-back ul {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.6;
 }
 
@@ -248,12 +261,12 @@ footer p {
 }
 
 .social-links {
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
 }
 
 .social-button {
-    background-color: #333;
+    background-color: #1E90FF;
     color: #fff;
     padding: 10px 20px;
     margin: 5px;
@@ -266,7 +279,7 @@ footer p {
 }
 
 .social-button:hover {
-    background-color: #555;
+    background-color: #63B8FF;
     transform: scale(1.05);
 }
 
@@ -277,11 +290,15 @@ footer p {
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     nav ul li {
         display: block;
         margin: 10px 0;
+    }
+
+    section h2 {
+        font-size: 2rem;
     }
 }
