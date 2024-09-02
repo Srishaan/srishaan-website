@@ -12,6 +12,10 @@
         <div class="container">
             <h1>Srishaan Iyengar</h1>
             <p>Austin, Texas | <a href="mailto:si2465@columbia.edu">si2465@columbia.edu</a> | +1 (512) 865-9401</p>
+            <div class="animated-text-container">
+                <span class="static-text">I am a </span>
+                <span class="animated-text"></span>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -39,7 +43,7 @@
                     <!-- Columbia University -->
                     <div class="education-block">
                         <div class="education-header">
-                            <img src="columbia.png" alt="Columbia University Logo">
+                            <img src="images/Columbia.png" alt="Columbia University Logo">
                             <div>
                                 <h4>Columbia University</h4>
                                 <p>M.S. in Data Science (Sep 2024 - Dec 2025)</p>
@@ -58,7 +62,7 @@
                     <!-- University of Texas at Austin -->
                     <div class="education-block">
                         <div class="education-header">
-                            <img src="utaustin.png" alt="UT Austin Logo">
+                            <img src="images/utaustin.png" alt="UT Austin Logo">
                             <div>
                                 <h4>University of Texas at Austin</h4>
                                 <p>B.S. in Electrical & Computer Engineering (Aug 2020 - May 2024)</p>
@@ -87,7 +91,7 @@
                     <!-- Amazon -->
                     <div class="experience-card">
                         <div class="experience-front">
-                            <img src="amazon.png" alt="Amazon Logo">
+                            <img src="images/amazon.png" alt="Amazon Logo">
                             <h3>Software Development Engineer Intern</h3>
                         </div>
                         <div class="experience-back">
@@ -103,7 +107,7 @@
                     <!-- NXP Semiconductors -->
                     <div class="experience-card">
                         <div class="experience-front">
-                            <img src="nxp.png" alt="NXP Logo">
+                            <img src="images/NXP.png" alt="NXP Logo">
                             <h3>Software Engineering Intern</h3>
                         </div>
                         <div class="experience-back">
@@ -119,7 +123,7 @@
                     <!-- Cadence Design Systems Inc. -->
                     <div class="experience-card">
                         <div class="experience-front">
-                            <img src="cadence.png" alt="Cadence Logo">
+                            <img src="images/Cadence.png" alt="Cadence Logo">
                             <h3>Software Engineering Intern</h3>
                         </div>
                         <div class="experience-back">
@@ -181,5 +185,21 @@
             <p>© 2024 Srishaan Iyengar. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- JavaScript for Text Animation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const texts = ["Engineer", "Tester", "Student", "Designer", "Programmer"];
+            let textContainer = document.querySelector('.animated-text');
+            let index = 0;
+
+            function changeText() {
+                textContainer.textContent = texts[index];
+                index = (index + 1) % texts.length;
+            }
+
+            setInterval(changeText, 2000); // Change every 2 seconds
+        });
+    </script>
 </body>
 </html>
