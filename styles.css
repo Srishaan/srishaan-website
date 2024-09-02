@@ -70,6 +70,44 @@ nav ul li a:hover {
     color: #1E90FF;
 }
 
+.animated-text-container {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+    color: #1E90FF;
+    height: 30px; /* Adjust based on the font size */
+    overflow: hidden;
+    position: relative;
+}
+
+.static-text {
+    font-weight: 700;
+}
+
+.animated-text {
+    font-weight: 700;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    animation: changeText 10s infinite;
+}
+
+@keyframes changeText {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    20% { opacity: 0; transform: translateY(-100%); }
+    30% { opacity: 1; }
+    40% { opacity: 0; transform: translateY(-200%); }
+    50% { opacity: 1; }
+    60% { opacity: 0; transform: translateY(-300%); }
+    70% { opacity: 1; }
+    80% { opacity: 0; transform: translateY(-400%); }
+    90% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-500%); }
+}
+
 main {
     background-color: #f4f4f4;
     padding: 40px 0;
