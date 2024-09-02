@@ -34,13 +34,14 @@ header p {
 }
 
 header p a {
-    color: #1E90FF; /* Light blue color */
+    color: #1E90FF !important; /* Light blue color with !important to override other styles */
     text-decoration: none;
 }
 
 header p a:hover {
-    color: #63B8FF; /* Even lighter blue on hover */
+    color: #63B8FF !important; /* Even lighter blue on hover with !important */
 }
+
 
 nav ul {
     list-style: none;
