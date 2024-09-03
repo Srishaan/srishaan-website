@@ -72,11 +72,11 @@ nav ul li a:hover {
 
 .animated-text-container {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;  /* Increased the size for better emphasis */
+    font-size: 2rem;
     margin-top: 20px;
     text-align: center;
     color: #1E90FF;
-    height: 40px; /* Adjust based on the font size */
+    height: 40px;
     overflow: hidden;
     position: relative;
 }
@@ -87,16 +87,14 @@ nav ul li a:hover {
     width: 100%;
     top: 0;
     left: 0;
-    animation: changeText 15s infinite linear;  /* Increased duration for a smoother transition */
+    animation: fadeText 2s infinite ease-in-out;
     text-align: center;
 }
 
-@keyframes changeText {
-    0%, 20% { opacity: 0; transform: translateY(100%); }
+@keyframes fadeText {
+    0%, 20% { opacity: 0; transform: translateY(20px); }
     25%, 45% { opacity: 1; transform: translateY(0); }
-    50%, 70% { opacity: 0; transform: translateY(-100%); }
-    75%, 95% { opacity: 1; transform: translateY(-200%); }
-    100% { opacity: 0; transform: translateY(-300%); }
+    50%, 100% { opacity: 0; transform: translateY(-20px); }
 }
 
 main {
