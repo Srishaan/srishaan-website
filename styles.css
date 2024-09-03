@@ -87,14 +87,13 @@ nav ul li a:hover {
     width: 100%;
     top: 0;
     left: 0;
-    animation: fadeText 2s infinite ease-in-out;
+    animation: fadeText 2s linear infinite;
     text-align: center;
 }
 
 @keyframes fadeText {
-    0%, 20% { opacity: 0; transform: translateY(20px); }
-    25%, 45% { opacity: 1; transform: translateY(0); }
-    50%, 100% { opacity: 0; transform: translateY(-20px); }
+    0%, 100% { opacity: 0; transform: translateY(20px); }
+    10%, 90% { opacity: 1; transform: translateY(0); }
 }
 
 main {
