@@ -38,12 +38,12 @@ header p {
 }
 
 header p a {
-    color: #1E90FF; /* Light blue color */
+    color: #1E90FF;
     text-decoration: none;
 }
 
 header p a:hover {
-    color: #63B8FF; /* Even lighter blue on hover */
+    color: #63B8FF;
 }
 
 nav ul {
@@ -202,26 +202,52 @@ nav ul li a:hover {
     padding: 5px;
 }
 
+.bar-java {
+    height: 95%;
+}
+
 .bar-python {
     height: 90%;
 }
 
-.bar-java {
-    height: 75%;
-}
-
 .bar-cpp {
-    height: 65%;
+    height: 85%;
 }
 
-.bar-javascript {
+.bar-assembly {
     height: 80%;
 }
 
 .bar-tcl-tk {
-    height: 50%;
+    height: 75%;
 }
 
+.bar-verilog {
+    height: 70%;
+}
+
+/* Technologies Section */
+.technologies {
+    margin-top: 30px;
+}
+
+.technologies h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.technologies ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.technologies ul li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Animated Text */
 .animated-text-container {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
@@ -249,6 +275,7 @@ nav ul li a:hover {
     55%, 100% { opacity: 0; transform: translateY(-20px); }
 }
 
+/* Main and Section Styling */
 main {
     background-color: #f4f4f4;
     padding: 40px 0;
@@ -285,6 +312,7 @@ section p, section ul {
     line-height: 1.8;
 }
 
+/* Footer Styling */
 footer {
     background-color: #333;
     color: #fff;
@@ -299,6 +327,7 @@ footer p {
     font-size: 1rem;
 }
 
+/* Social Links */
 .social-links {
     margin-top: 20px;
     text-align: center;
