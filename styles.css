@@ -83,17 +83,33 @@ nav ul li a:hover {
     width: 30px;
     background-color: #1E90FF;
     transition: height 0.3s ease;
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 5px;
 }
 
-.bar-90 {
+.bar-python {
     height: 90%;
 }
 
-.bar-70 {
-    height: 70%;
+.bar-java {
+    height: 75%;
 }
 
-.bar-50 {
+.bar-cpp {
+    height: 65%;
+}
+
+.bar-javascript {
+    height: 80%;
+}
+
+.bar-tcl-tk {
     height: 50%;
 }
 
