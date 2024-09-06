@@ -38,12 +38,12 @@ header p {
 }
 
 header p a {
-    color: #1E90FF;
+    color: #1E90FF; /* Light blue color */
     text-decoration: none;
 }
 
 header p a:hover {
-    color: #63B8FF;
+    color: #63B8FF; /* Even lighter blue on hover */
 }
 
 nav ul {
