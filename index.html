@@ -36,10 +36,12 @@
             </div>
         </section>
 
+        <!-- Education Section with Two Neatly Placed Boxes -->
         <section id="education" class="light">
             <div class="container">
                 <h2>Education</h2>
-                <div class="education-section">
+                <div class="education-grid">
+                    <!-- Columbia University -->
                     <div class="education-block">
                         <div class="education-header">
                             <img src="images/Columbia.png" alt="Columbia University Logo">
@@ -58,6 +60,7 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- UT Austin -->
                     <div class="education-block">
                         <div class="education-header">
                             <img src="images/utaustin.png" alt="UT Austin Logo">
@@ -82,7 +85,7 @@
             </div>
         </section>
 
-        <!-- Restored Experience Section -->
+        <!-- Experience Section with Hover Effect -->
         <section id="experience" class="light">
             <div class="container">
                 <h2>Experience</h2>
@@ -90,10 +93,11 @@
                     <!-- Amazon -->
                     <div class="experience-card">
                         <div class="experience-front">
-                            <h3>Amazon</h3>
-                            <p>Software Development Engineer Intern</p>
+                            <img src="images/amazon.png" alt="Amazon Logo">
+                            <h3>Software Development Engineer Intern</h3>
                         </div>
                         <div class="experience-back">
+                            <h3>Amazon</h3>
                             <p>May 2023 - Aug 2023</p>
                             <ul>
                                 <li>Mandated an email ID as part of the request to provide access to Amazon Business Product Search API.</li>
@@ -105,10 +109,11 @@
                     <!-- NXP Semiconductors -->
                     <div class="experience-card">
                         <div class="experience-front">
-                            <h3>NXP Semiconductors</h3>
-                            <p>Software Engineering Intern</p>
+                            <img src="images/NXP.png" alt="NXP Logo">
+                            <h3>Software Engineering Intern</h3>
                         </div>
                         <div class="experience-back">
+                            <h3>NXP Semiconductors</h3>
                             <p>May 2022 - Aug 2022</p>
                             <ul>
                                 <li>Authored a TCL script that converted timing report data into a JSON file format.</li>
@@ -120,10 +125,11 @@
                     <!-- Cadence Design Systems Inc. -->
                     <div class="experience-card">
                         <div class="experience-front">
-                            <h3>Cadence Design Systems Inc.</h3>
-                            <p>Software Engineering Intern</p>
+                            <img src="images/Cadence.png" alt="Cadence Logo">
+                            <h3>Software Engineering Intern</h3>
                         </div>
                         <div class="experience-back">
+                            <h3>Cadence Design Systems Inc.</h3>
                             <p>May 2021 - Aug 2021</p>
                             <ul>
                                 <li>Built a Python-based GUI for DDR verification tests using PyQt on Linux OS.</li>
@@ -169,8 +175,8 @@
                 <p>Feel free to reach out to me via <a href="mailto:si2465@columbia.edu">email</a> or connect with me on <a href="https://linkedin.com/in/SrishaanIyengar">LinkedIn</a>.</p>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/SrishaanIyengar" target="_blank" class="social-button">LinkedIn</a>
-                    <a href="https://www.instagram.com/srishaan_iyengar" target="_blank" class="social-button">Instagram</a>
-                    <a href="https://www.facebook.com/srishaaniyengar" target="_blank" class="social-button">Facebook</a>
+                    <a href="https://www.instagram.com/yourusername" target="_blank" class="social-button">Instagram</a>
+                    <a href="https://www.facebook.com/yourusername" target="_blank" class="social-button">Facebook</a>
                 </div>
             </div>
         </section>
@@ -187,3 +193,16 @@
         document.addEventListener('DOMContentLoaded', function () {
             const texts = ["Engineer", "Tester", "Student", "Designer", "Programmer"];
             let textContainer = document.querySelector('.animated-text');
+            let index = 0;
+
+            function changeText() {
+                textContainer.textContent = texts[index];
+                index = (index + 1) % texts.length;
+            }
+
+            changeText(); // Initialize with the first text
+            setInterval(changeText, 4000); // Change every 4 seconds
+        });
+    </script>
+</body>
+</html>
