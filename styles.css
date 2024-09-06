@@ -70,49 +70,6 @@ nav ul li a:hover {
     color: #1E90FF;
 }
 
-/* Bar Graphs */
-.bar-container {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    height: 200px;
-    margin-top: 20px;
-}
-
-.bar {
-    width: 30px;
-    background-color: #1E90FF;
-    transition: height 0.3s ease;
-    text-align: center;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 5px;
-}
-
-.bar-python {
-    height: 90%;
-}
-
-.bar-java {
-    height: 75%;
-}
-
-.bar-cpp {
-    height: 65%;
-}
-
-.bar-javascript {
-    height: 80%;
-}
-
-.bar-tcl-tk {
-    height: 50%;
-}
-
 .animated-text-container {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
