@@ -70,6 +70,64 @@ nav ul li a:hover {
     color: #1E90FF;
 }
 
+/* Education Section */
+.education-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.education-block {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.education-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.education-header img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.education-header h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.education-header p {
+    font-size: 1rem;
+    margin: 5px 0 0 0;
+}
+
+.coursework h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.coursework ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coursework ul li {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
 /* Experience Section */
 .experience-grid {
     display: grid;
@@ -78,35 +136,46 @@ nav ul li a:hover {
 }
 
 .experience-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    perspective: 1000px;
+    position: relative;
+    width: 100%;
+    height: 250px;
 }
 
-.experience-card:hover {
-    transform: translateY(-10px);
+.experience-front, .experience-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    transition: transform 0.6s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
 }
 
 .experience-front {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    margin-bottom: 10px;
+    color: #333;
 }
 
 .experience-back {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
-    color: #555;
+    background-color: #333;
+    color: #fff;
 }
 
-.experience-back ul {
-    padding-left: 20px;
+.experience-card:hover .experience-front {
+    transform: rotateY(180deg);
 }
 
-.experience-back p {
-    font-size: 1rem;
+.experience-card:hover .experience-back {
+    transform: rotateY(360deg);
+}
+
+.experience-back h3 {
     margin-bottom: 10px;
 }
 
